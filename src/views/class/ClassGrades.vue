@@ -137,8 +137,7 @@ export default {
         this.$set(this.json_fields, `${item.name} (总分:${_i})`, item.id.toString())
         return {
           title: `${item.name} (总分:${_i})`,
-          dataIndex: item.id,
-          width: 180
+          dataIndex: item.id
         }
       })
       for (let i = 0; i < dynamicColumn.length; i++) {
